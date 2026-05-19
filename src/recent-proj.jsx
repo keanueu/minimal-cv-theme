@@ -1,27 +1,42 @@
-﻿import { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import './App.css'
 import { applyDocumentTheme } from './theme.js'
 
 const projects = [
   {
     title: 'Cabanas',
-    description: 'Hotel and boat booking for cabanas',
-    site: 'cabanas.fun',
+    description: 'hotel and boat booking & reservation system',
+    github: 'https://github.com/keanueu/reservation-engine-laravel',
   },
   {
-    title: 'sm404',
-    description: 'Online coding bootcamp',
-    site: 'sm-404.com',
+    title: 'negotia-app',
+    description: 'offline-first negotiation assistant',
+    github: 'https://github.com/keanueu/negotiate-app',
   },
   {
-    title: 'DIIN.PH',
-    description: 'AI-powered wardrobe assistant',
-    site: 'diin.ph',
+    title: 'NON-PROFITV2',
+    description: 'water donation landing page',
+    github: 'https://github.com/keanueu/project-water-nonprofit',
   },
   {
-    title: 'DYNAMIS Workout Tracker',
-    description: 'AI-powered workout tracker',
-    site: 'dynamis-app.online',
+    title: 'WD-ACT-BMW',
+    description: 'wd-bmw landing page',
+    github: 'https://github.com/keanueu/wd-bootstrap',
+  },
+  {
+    title: 'doitsyba',
+    description: 'event recognition',
+    github: 'https://github.com/keanueu/doit-syba-landing-page',
+  },
+  {
+    title: 'CBT Pangasinan',
+    description: 'pangasinan tourism landing page',
+    github: 'https://github.com/keanueu/doit-syba-landing-page',
+  },
+  {
+    title: 'InternTrack',
+    description: 'ai-powered ojt hour tracker',
+    github: 'in development',
   },
 ]
 
@@ -80,9 +95,8 @@ const RecentProj = () => {
             type="button"
             onClick={onThemeButtonClick}
             aria-label={isDark ? 'Switch to light mode' : 'Switch to dark mode'}
-            className={`group relative justify-self-end w-[28px] h-[28px] border-0 bg-transparent text-[12px] inline-flex items-center justify-center p-0 rounded-full !rounded-full overflow-hidden transition-all duration-200 ${
-              isDark ? 'text-zinc-100' : 'text-zinc-700'
-            }`}
+            className={`group relative justify-self-end w-[28px] h-[28px] border-0 bg-transparent text-[12px] inline-flex items-center justify-center p-0 rounded-full !rounded-full overflow-hidden transition-all duration-200 ${isDark ? 'text-zinc-100' : 'text-zinc-700'
+              }`}
           >
             <span
               aria-hidden="true"
@@ -105,9 +119,24 @@ const RecentProj = () => {
               className="stagger-item page-divider-b bg-zinc-100 p-2.5 transition-all duration-300 ease-out hover:-translate-y-0.5"
               style={{ '--stagger-delay': `${index * 100}ms` }}
             >
-              <h4 className="text-sm font-medium mb-1">{project.title}</h4>
+              <h4 className="text-sm font-semibold mb-1">{project.title}</h4>
               <p className="text-xs mb-1.5">{project.description}</p>
-              <code className="text-xs bg-zinc-200 px-1.5 py-0.5">{project.site}</code>
+              {project.github === 'in development' ? (
+                <span className="github-project-btn inline-flex items-center gap-1 text-[11px] px-2 py-0.5 rounded opacity-75 cursor-default">
+                  <i className="fa-solid fa-hammer"></i>
+                  <span>In Development</span>
+                </span>
+              ) : (
+                <a
+                  href={project.github}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="github-project-btn inline-flex items-center gap-1 text-[11px] px-2 py-0.5 rounded transition-colors duration-200"
+                >
+                  <i className="fa-brands fa-github"></i>
+                  <span>GitHub</span>
+                </a>
+              )}
             </article>
           ))}
         </div>
