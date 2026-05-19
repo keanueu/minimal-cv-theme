@@ -30,8 +30,8 @@ const projects = [
   },
   {
     title: 'CBT Pangasinan',
-    description: 'pangasinan tourism landing page',
-    github: 'https://github.com/keanueu/doit-syba-landing-page',
+    description: 'pangasinan tourist spot landing page',
+    github: 'https://github.com/keanueu/cbt-pang.',
   },
   {
     title: 'InternTrack',
