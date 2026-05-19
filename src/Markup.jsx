@@ -180,7 +180,7 @@ const Markup = () => (
         </div>
       </section>
 
-       <section className="fadeup-item fadeup-4 grid grid-cols-1 md:grid-cols-[1fr_1fr] gap-2 mb-2 md:items-stretch ">
+      <section className="fadeup-item fadeup-4 grid grid-cols-1 md:grid-cols-[1fr_1fr] gap-2 mb-2 md:items-stretch ">
         <div className="grid grid-cols-1 gap-2 items-stretch md:flex-1">
           <article className="bg-white p-3 pb-3 h-full min-h-[120px] md:min-h-0 page-divider-b main-page-divider-hover">
             <div className="flex items-center justify-between mb-2">
@@ -287,33 +287,63 @@ const Markup = () => (
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
             <div className="p-2.5 transition-all duration-300 ease-out 
                hover:-translate-y-0.5">
-              <h4 className="text-sm font-medium mb-1">Cabanas</h4>
-              <p className="text-xs mb-1.5">Hotel and boat booking for cabanas</p><code
-                className="text-xs bg-zinc-200 px-1.5 py-0.5">cabanas.fun</code>
+              <h4 className="text-sm font-semibold mb-1">Cabanas</h4>
+              <p className="text-xs mb-1.5">hotel and boat booking & reservation system</p>
+              <a
+                href="https://github.com/keanueu/reservation-engine-laravel"
+                target="_blank"
+                rel="noreferrer"
+                className="github-project-btn inline-flex items-center gap-1 text-[11px] px-2 py-0.5 rounded transition-colors duration-200"
+              >
+                <i className="fa-brands fa-github"></i>
+                <span>GitHub</span>
+              </a>
             </div>
             <div className="p-2.5 transition-all duration-300 ease-out 
                hover:-translate-y-0.5">
-              <h4 className="text-sm font-medium mb-1">sm404</h4>
-              <p className="text-xs mb-1.5">Online coding bootcamp</p><code
-                className="text-xs bg-zinc-200 px-1.5 py-0.5">sm-404.com</code>
+              <h4 className="text-sm font-semibold mb-1">negotia-app</h4>
+              <p className="text-xs mb-1.5">offline-first negotiation assistant</p>
+              <a
+                href="https://github.com/keanueu/negotiate-app"
+                target="_blank"
+                rel="noreferrer"
+                className="github-project-btn inline-flex items-center gap-1 text-[11px] px-2 py-0.5 rounded transition-colors duration-200"
+              >
+                <i className="fa-brands fa-github"></i>
+                <span>GitHub</span>
+              </a>
             </div>
             <div className="p-2.5 transition-all duration-300 ease-out 
                hover:-translate-y-0.5">
-              <h4 className="text-sm font-medium mb-1">DIIN.PH</h4>
-              <p className="text-xs mb-1.5">AI-powered wardrobe assistant</p><code
-                className="text-xs bg-zinc-200 px-1.5 py-0.5">diin.ph</code>
+              <h4 className="text-sm font-semibold mb-1">NON-PROFITV2</h4>
+              <p className="text-xs mb-1.5">water donation landing page</p> <a
+                href="https://github.com/keanueu/project-water-nonprofit"
+                target="_blank"
+                rel="noreferrer"
+                className="github-project-btn inline-flex items-center gap-1 text-[11px] px-2 py-0.5 rounded transition-colors duration-200"
+              >
+                <i className="fa-brands fa-github"></i>
+                <span>GitHub</span>
+              </a>
             </div>
             <div className="p-2.5 transition-all duration-300 ease-out 
                hover:-translate-y-0.5">
-              <h4 className="text-sm font-medium mb-1">DYNAMIS Workout Tracker</h4>
-              <p className="text-xs mb-1.5">AI-powered workout tracker</p><code
-                className="text-xs bg-zinc-200 px-1.5 py-0.5">dynamis-app.online</code>
+              <h4 className="text-sm font-semibold mb-1">WD-ACT-BMW</h4>
+              <p className="text-xs mb-1.5">wd-bmw landing page</p><a
+                href="https://github.com/keanueu/wd-bootstrap"
+                target="_blank"
+                rel="noreferrer"
+                className="github-project-btn inline-flex items-center gap-1 text-[11px] px-2 py-0.5 rounded transition-colors duration-200"
+              >
+                <i className="fa-brands fa-github"></i>
+                <span>GitHub</span>
+              </a>
             </div>
           </div>
         </article>
       </section>
 
-    
+
 
       <section className="fadeup-item fadeup-5 grid grid-cols-1 md:grid-cols-2 gap-2 mb-2 md:items-stretch">
         <article className=" bg-white p-2 md:p-2.5 pb-3 page-divider-b main-page-divider-hover">
@@ -393,7 +423,7 @@ const Markup = () => (
                hover:-translate-y-0.5 border px-2 py-2.5 shadow-[0_0_0_0_rgba(113,113,122,0)] hover:border-transparent hover:shadow-[0_8px_14px_-10px_rgba(113,113,122,0.62)]" href="https://www.linkedin.com/in/kristian-ken-agbayani-90406b3b6/" target="_blank" rel="noopener noreferrer"><i
               className="fa-brands fa-linkedin mr-1"></i> LinkedIn</a>
           <a className="social-link contact-outline light-only-border-b text-[11.5px] inline-flex items-center w-full transition-all duration-300 ease-out 
-               hover:-translate-y-0.5 border px-2 py-2.5 shadow-[0_0_0_0_rgba(113,113,122,0)] hover:border-transparent hover:shadow-[0_8px_14px_-10px_rgba(113,113,122,0.62)]" href="https://github.com/kentaror" target="_blank" rel="noopener noreferrer"><i
+               hover:-translate-y-0.5 border px-2 py-2.5 shadow-[0_0_0_0_rgba(113,113,122,0)] hover:border-transparent hover:shadow-[0_8px_14px_-10px_rgba(113,113,122,0.62)]" href="https://github.com/keanueu" target="_blank" rel="noopener noreferrer"><i
               className="fa-brands fa-github mr-1"></i> GitHub</a>
           <a className="social-link contact-outline light-only-border-b text-[11.5px] inline-flex items-center w-full transition-all duration-300 ease-out 
                hover:-translate-y-0.5 border px-2 py-2.5 shadow-[0_0_0_0_rgba(113,113,122,0)] hover:border-transparent hover:shadow-[0_8px_14px_-10px_rgba(113,113,122,0.62)]" href="https://www.instagram.com/keanueu" target="_blank" rel="noopener noreferrer"><i
@@ -636,6 +666,3 @@ const Markup = () => (
 )
 
 export default Markup
-
-
-

@@ -1752,3 +1752,25 @@ body:not(.dark-theme) .main-page-divider-lift:focus-within,
   border-color: #3f3f46 !important;
   color: #e4e4e7 !important;
 }
+
+/* GitHub Project Buttons - Theme Responsive Styles */
+.github-project-btn {
+  background-color: #e4e4e7 !important;
+  color: #27272a !important;
+  transition: background-color 200ms ease, color 200ms ease, border-color 200ms ease !important;
+}
+
+.github-project-btn:hover {
+  background-color: #d4d4d8 !important;
+  color: #18181b !important;
+}
+
+.dark-theme .github-project-btn {
+  background-color: #27272a !important;
+  color: #f4f4f5 !important;
+}
+
+.dark-theme .github-project-btn:hover {
+  background-color: #3f3f46 !important;
+  color: #ffffff !important;
+}
