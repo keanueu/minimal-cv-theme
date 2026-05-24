@@ -148,8 +148,14 @@ body.chat-open #chatPanel {
   z-index: 70;
 }
 
-#chatPanel.flex {
-  animation: chat-panel-in 220ms ease-out;
+/* Opening animation applied when explicitly adding the 'opening' class */
+#chatPanel.flex.opening {
+  animation: chat-panel-in 260ms cubic-bezier(0.2, 0, 0.2, 1) both;
+}
+
+/* Closing animation applied when adding the 'closing' class */
+#chatPanel.closing {
+  animation: chat-panel-out 200ms cubic-bezier(0.2, 0, 0.2, 1) both;
 }
 
 .animate-wiggle {
@@ -160,11 +166,22 @@ body.chat-open #chatPanel {
 @keyframes chat-panel-in {
   from {
     opacity: 0;
-    transform: translateY(8px) scale(0.98);
+    transform: translateY(8px) scale(0.998);
   }
   to {
     opacity: 1;
     transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes chat-panel-out {
+  from {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(8px) scale(0.998);
   }
 }
 
@@ -333,11 +350,41 @@ body.chat-open #chatPanel {
     #chatPanel {
       left: auto;
       right: 12px;
-      width: min(340px, calc(100vw - 24px));
-      height: min(540px, calc(100vh - 88px));
+      width: min(380px, calc(100vw - 24px));
+      height: min(600px, calc(100vh - 88px));
       max-height: calc(100vh - 88px);
       transform-origin: bottom right;
     }
+
+/* Ensure the chat close button is large and has a solid, visible hit area. */
+
+#chatPanel #chatClose {
+  width: 42px !important;
+  height: 42px !important;
+  font-size: 28px !important;
+  line-height: 1 !important;
+  border-radius: 0 !important; /* remove rounded background */
+  background-color: transparent !important;
+  color: #9ca3af !important; /* much lighter gray */
+  opacity: 0.9 !important;
+  display: grid !important;
+  place-items: center !important;
+  cursor: pointer !important;
+  transition: color 160ms ease, transform 160ms ease !important;
+}
+
+#chatPanel #chatClose:hover {
+  color: #6b7280 !important; /* slightly darker on hover */
+  transform: translateY(0) !important; /* remove lift on hover to avoid bounce */
+}
+
+@media (max-width: 600px) {
+  #chatPanel #chatClose {
+    width: 40px !important;
+    height: 40px !important;
+    font-size: 24px !important;
+  }
+}
 
     #chatLauncher {
       left: auto;
@@ -450,7 +497,7 @@ body.chat-open #chatPanel {
       left: 16px;
       right: 16px;
       width: auto;
-      height: min(500px, calc(100vh - 80px));
+      height: min(560px, calc(100vh - 80px));
       max-height: calc(100vh - 80px);
       margin-inline: auto;
       transform-origin: bottom center;

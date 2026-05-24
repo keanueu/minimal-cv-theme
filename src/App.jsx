@@ -536,12 +536,43 @@ function App() {
       !window.matchMedia('(max-width: 640px), (hover: none) and (pointer: coarse)').matches
 
     function setChatOpen(isOpen) {
-      chatPanel.classList.toggle('hidden', !isOpen)
-      chatPanel.classList.toggle('flex', isOpen)
-      chatPanel.setAttribute('aria-hidden', isOpen ? 'false' : 'true')
-      chatLauncher.classList.toggle('hidden', isOpen)
-      if (isOpen && shouldAutofocusChat()) {
-        chatInput.focus()
+      if (!chatPanel || !chatLauncher) return
+
+      if (isOpen) {
+        // Open: cancel any closing animation, make visible and play opening animation
+        chatPanel.classList.remove('closing')
+        chatPanel.classList.remove('hidden')
+        chatPanel.classList.add('flex', 'opening')
+        chatPanel.setAttribute('aria-hidden', 'false')
+        chatLauncher.classList.add('hidden')
+
+        const onOpenEnd = (e) => {
+          if (e.animationName === 'chat-panel-in') {
+            chatPanel.classList.remove('opening')
+            chatPanel.removeEventListener('animationend', onOpenEnd)
+          }
+        }
+        chatPanel.addEventListener('animationend', onOpenEnd)
+
+        if (isOpen && shouldAutofocusChat()) {
+          chatInput.focus()
+        }
+      } else {
+        // Close: play closing animation then hide after it ends
+        chatPanel.classList.remove('opening')
+        chatPanel.classList.add('closing')
+        chatPanel.setAttribute('aria-hidden', 'true')
+        chatLauncher.classList.remove('hidden')
+
+        const onCloseEnd = (e) => {
+          if (e.animationName === 'chat-panel-out') {
+            chatPanel.classList.remove('closing')
+            chatPanel.classList.remove('flex')
+            chatPanel.classList.add('hidden')
+            chatPanel.removeEventListener('animationend', onCloseEnd)
+          }
+        }
+        chatPanel.addEventListener('animationend', onCloseEnd)
       }
     }
 

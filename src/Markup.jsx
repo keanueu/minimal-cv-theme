@@ -401,7 +401,7 @@ const Markup = () => (
         <div className="group p-2.5 light-only-border-b">
           <h3 className="text-sm font-bold mb-2">A member of</h3>
           <div className="flex items-start justify-between gap-2 pb-2 light-only-border-b">
-            <p className="flex-1 text-[11.5px] leading-5">Domain of Information Technologist Multimedia Club (DOITMC)</p>
+            <p className="flex-1 text-[10px] leading-5">Domain of Information Technologist Multimedia Club (DOITMC)</p>
             <svg
               className="mt-1 h-2.5 w-2.5 flex-shrink-0 text-foreground/50 transition-transform group-hover:translate-x-0.5"
               fill="none"
@@ -419,21 +419,24 @@ const Markup = () => (
         </div>
         <div className="p-2.5 light-only-border-b">
           <h3 className="text-sm font-bold mb-1">Social Links</h3>
-          <a className="social-link contact-outline light-only-border-b text-[11.5px] inline-flex items-center w-full transition-all duration-300 ease-out 
-               hover:-translate-y-0.5 border px-2 py-2.5 shadow-[0_0_0_0_rgba(113,113,122,0)] hover:border-transparent hover:shadow-[0_8px_14px_-10px_rgba(113,113,122,0.62)]" href="https://www.linkedin.com/in/kristian-ken-agbayani-90406b3b6/" target="_blank" rel="noopener noreferrer"><i
-              className="fa-brands fa-linkedin mr-1"></i> LinkedIn</a>
-          <a className="social-link contact-outline light-only-border-b text-[11.5px] inline-flex items-center w-full transition-all duration-300 ease-out 
-               hover:-translate-y-0.5 border px-2 py-2.5 shadow-[0_0_0_0_rgba(113,113,122,0)] hover:border-transparent hover:shadow-[0_8px_14px_-10px_rgba(113,113,122,0.62)]" href="https://github.com/keanueu" target="_blank" rel="noopener noreferrer"><i
-              className="fa-brands fa-github mr-1"></i> GitHub</a>
-          <a className="social-link contact-outline light-only-border-b text-[11.5px] inline-flex items-center w-full transition-all duration-300 ease-out 
-               hover:-translate-y-0.5 border px-2 py-2.5 shadow-[0_0_0_0_rgba(113,113,122,0)] hover:border-transparent hover:shadow-[0_8px_14px_-10px_rgba(113,113,122,0.62)]" href="https://www.instagram.com/keanueu" target="_blank" rel="noopener noreferrer"><i
-              className="fa-brands fa-instagram mr-1"></i> Instagram</a>
+          <a className="social-link contact-outline light-only-border-b text-[10px] inline-flex items-center w-full transition-all duration-300 ease-out 
+            hover:-translate-y-0.5 border px-2 py-2.5 shadow-[0_0_0_0_rgba(113,113,122,0)] hover:border-transparent hover:shadow-[0_8px_14px_-10px_rgba(113,113,122,0.62)]" href="https://www.linkedin.com/in/kristian-ken-agbayani-90406b3b6/" target="_blank" rel="noopener noreferrer"><i
+              className="fa-brands fa-linkedin mr-1 text-[11px]"></i> LinkedIn</a>
+          <a className="social-link contact-outline light-only-border-b text-[10px] inline-flex items-center w-full transition-all duration-300 ease-out 
+            hover:-translate-y-0.5 border px-2 py-2.5 shadow-[0_0_0_0_rgba(113,113,122,0)] hover:border-transparent hover:shadow-[0_8px_14px_-10px_rgba(113,113,122,0.62)]" href="https://github.com/keanueu" target="_blank" rel="noopener noreferrer"><i
+              className="fa-brands fa-github mr-1 text-[11px]"></i> GitHub</a>
+          <a className="social-link contact-outline light-only-border-b text-[10px] inline-flex items-center w-full transition-all duration-300 ease-out 
+            hover:-translate-y-0.5 border px-2 py-2.5 shadow-[0_0_0_0_rgba(113,113,122,0)] hover:border-transparent hover:shadow-[0_8px_14px_-10px_rgba(113,113,122,0.62)]" href="https://www.instagram.com/keanueu" target="_blank" rel="noopener noreferrer"><i
+              className="fa-brands fa-instagram mr-1 text-[11px]"></i> Instagram</a>
+          <a className="social-link contact-outline light-only-border-b text-[10px] inline-flex items-center w-full transition-all duration-300 ease-out 
+            hover:-translate-y-0.5 border px-2 py-2.5 shadow-[0_0_0_0_rgba(113,113,122,0)] hover:border-transparent hover:shadow-[0_8px_14px_-10px_rgba(113,113,122,0.62)]" href="https://www.indeed.com/" target="_blank" rel="noopener noreferrer"><i
+              className="fa-solid fa-briefcase mr-1 text-[11px]"></i> Indeed</a>
         </div>
         <div className="p-2.5 light-only-border-b">
           <h3 className="text-sm font-bold mb-1">Work With Me</h3>
           <div className="contact-outline light-only-border-b border px-1 py-1 w-full transition-all duration-300 ease-out hover:border-transparent">
-            <p className="text-[11.5px] leading-5">Available for freelance web development, custom UI/UX design, and digital branding solutions.</p>
-            <a className="text-[11.5px] mt-3 hover:underline inline-flex items-center gap-1" href="https://mail.google.com/mail/?view=cm&fs=1&to=agbayanikristianken@gmail.com&su=Get%20in%20touch">Get in touch <i className="fa-solid fa-angle-right"></i></a>
+            <p className="text-[10px] leading-5">Available for freelance web development, custom UI/UX design, and digital branding solutions.</p>
+            <a className="text-[10px] mt-2 hover:underline inline-flex items-center gap-1" href="https://mail.google.com/mail/?view=cm&fs=1&to=agbayanikristianken@gmail.com&su=Get%20in%20touch">Get in touch <i className="fa-solid fa-angle-right"></i></a>
           </div>
 
         </div>
@@ -446,10 +449,10 @@ const Markup = () => (
               target="_blank"
               rel="noopener noreferrer"
             >
-              <h3 className="text-[11px] font-bold mb-0.5 inline-flex items-center leading-tight">
+              <h3 className="text-[10px] font-bold mb-0.5 inline-flex items-center leading-tight">
                 <i className="fa-regular fa-envelope mr-1"></i> Email
               </h3>
-              <span className="text-[11px] leading-tight">
+              <span className="text-[10px] leading-tight">
                 agbayanikristianken@gmail.com
               </span>
             </a>
@@ -461,10 +464,10 @@ const Markup = () => (
               target="_blank"
               rel="noopener noreferrer"
             >
-              <span className="text-[11px] mt-0.5 font-semibold inline-flex items-center leading-tight">
+              <span className="text-[10px] mt-0.5 font-semibold inline-flex items-center leading-tight">
                 <i className="fa-regular fa-calendar mr-1"></i> Let's Talk
               </span>
-              <span className="text-[11px] leading-tight">
+              <span className="text-[10px] leading-tight">
                 Schedule a Call <i className="fa-solid fa-angle-right"></i>
               </span>
             </a>
@@ -476,10 +479,10 @@ const Markup = () => (
               target="_blank"
               rel="noopener noreferrer"
             >
-              <span className="text-[11px] mt-0.5 font-semibold inline-flex items-center leading-tight">
+              <span className="text-[10px] mt-0.5 font-semibold inline-flex items-center leading-tight">
                 <i className="fa-regular fa-pen-to-square mr-1"></i> Blog
               </span>
-              <span className="text-[11px] leading-tight">
+              <span className="text-[10px] leading-tight">
                 Read my blog <i className="fa-solid fa-angle-right"></i>
               </span>
             </a>
