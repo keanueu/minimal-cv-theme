@@ -2,7 +2,7 @@
 
 const Chatbot = () => (
   <>
-    <div id="chatPanel" className="fixed right-4 bottom-[84px] w-[340px] max-w-[calc(100vw-32px)] h-[540px] max-h-[calc(100vh-96px)] bg-white border border-zinc-100 shadow-2xl hidden flex-col z-[60] !rounded-none" aria-hidden="true">
+    <div id="chatPanel" className="fixed right-4 bottom-[84px] w-[380px] max-w-[calc(100vw-32px)] h-[600px] max-h-[calc(100vh-96px)] bg-white border border-zinc-100 shadow-2xl hidden flex-col z-[60] !rounded-none" aria-hidden="true">
       <div className="px-[14px] pt-4 pb-[14px] border-b border-zinc-200 flex items-center justify-between gap-[10px]">
         <div className="flex items-center gap-[10px]">
           <img src="pfp2.png" alt="Ken profile" className="w-[34px] h-[34px] object-cover !rounded-none" />
@@ -11,7 +11,7 @@ const Chatbot = () => (
             <div className="mt-[2px] flex items-center gap-[7px] text-[12px] text-[#101010]"><span className="w-2 h-2 bg-[#16a34a] inline-block !rounded-none"></span> Online</div>
           </div>
         </div>
-        <button id="chatClose" className="w-[26px] h-[26px] border-none bg-transparent text-[#111111] text-[25px] leading-none !rounded-none" type="button" aria-label="Close chat">×</button>
+        <button id="chatClose" className="border-none bg-transparent text-[#111111] leading-none rounded-full" type="button" aria-label="Close chat">×</button>
       </div>
       <div id="chatMessages" className="flex-1 overflow-auto p-[14px]">
         <div className="flex items-center gap-[10px] mb-[10px] text-[#161616] text-[12px] font-semibold">
