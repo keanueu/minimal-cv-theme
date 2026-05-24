@@ -1173,33 +1173,47 @@ body:not(.dark-theme) #experienceList .experience-item:hover {
 }
 
 .chat-typing-dots span {
-  width: 6px;
-  height: 6px;
-  border-radius: 0;
-  background: #52525b;
-  opacity: 0.35;
-  animation: chat-typing-pulse 1s infinite ease-in-out;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #000;
+  opacity: 0;
+  transform: scale(0.95);
 }
 
+/* Per-dot animations to achieve: dot1 appears (black), dot2 appears gray->black, dot1 disappears, dot3 appears gray->black, dot2 disappears, repeat */
+.chat-typing-dots span:nth-child(1) {
+  animation: dot1-seq 1s infinite ease-in-out;
+}
 .chat-typing-dots span:nth-child(2) {
-  animation-delay: 0.15s;
+  animation: dot2-seq 1s infinite ease-in-out;
 }
-
 .chat-typing-dots span:nth-child(3) {
-  animation-delay: 0.3s;
+  animation: dot3-seq 1s infinite ease-in-out;
 }
 
-@keyframes chat-typing-pulse {
-  0%,
-  80%,
-  100% {
-    transform: translateY(0);
-    opacity: 0.35;
-  }
-  40% {
-    transform: translateY(-2px);
-    opacity: 1;
-  }
+@keyframes dot1-seq {
+  0% { opacity: 0; transform: scale(0.95); }
+  5% { opacity: 1; background: #000; transform: scale(1); }
+  28% { opacity: 1; background: #000; transform: scale(1); }
+  38% { opacity: 0; transform: scale(0.9); }
+  100% { opacity: 0; }
+}
+
+@keyframes dot2-seq {
+  0% { opacity: 0; background: #9ca3af; transform: scale(0.95); }
+  15% { opacity: 1; background: #9ca3af; transform: scale(1); }
+  33% { opacity: 1; background: #000; transform: scale(1); }
+  53% { opacity: 0; transform: scale(0.9); }
+  100% { opacity: 0; }
+}
+
+@keyframes dot3-seq {
+  0% { opacity: 0; background: #9ca3af; transform: scale(0.95); }
+  33% { opacity: 1; background: #9ca3af; transform: scale(1); }
+  53% { opacity: 1; background: #000; transform: scale(1); }
+  72% { opacity: 0; transform: scale(0.9); }
+  100% { opacity: 0; }
 }
 
 @keyframes skeleton-shimmer {
