@@ -84,6 +84,7 @@ const TechStack = () => {
             <span className="px-2 py-1 border border-zinc-200">Tailwind CSS</span>
             <span className="px-2 py-1 border border-zinc-200">Next.js</span>
             <span className="px-2 py-1 border border-zinc-200">React.js</span>
+            <span className="px-2 py-1 border border-zinc-200">Astro</span>
           </div>
         </div>
 
@@ -94,6 +95,7 @@ const TechStack = () => {
             <span className="px-2 py-1 border border-zinc-200">PHP</span>
             <span className="px-2 py-1 border border-zinc-200">Laravel</span>
             <span className="px-2 py-1 border border-zinc-200">MySQL</span>
+            <span className="px-2 py-1 border border-zinc-200">PostgreSQL</span>
           </div>
         </div>
 
@@ -135,30 +137,37 @@ const TechStack = () => {
             <span className="px-2 py-1 border border-zinc-200">BlueJ</span>
             <span className="px-2 py-1 border border-zinc-200">Android Studio</span>
             <span className="px-2 py-1 border border-zinc-200">Visual Studio</span>
+            <span className="px-2 py-1 border border-zinc-200">Antigravity</span>
             <span className="px-2 py-1 border border-zinc-200">Git</span>
             <span className="px-2 py-1 border border-zinc-200">Github</span>
             <span className="px-2 py-1 border border-zinc-200">Teams</span>
             <span className="px-2 py-1 border border-zinc-200">Discord</span>
+            <span className="px-2 py-1 border border-zinc-200">Trello</span>
           </div>
         </div>
 
         <div className="stagger-item" style={{ '--stagger-delay': '600ms' }}>
-          <h2 className="text-[14px] font-medium mb-2">Software and Cloud-based Designing Tools</h2>
+          <h2 className="text-[14px] font-medium mb-2">Design & Creative Stack</h2>
           <div className="flex flex-wrap gap-3 text-sm">
             <span className="px-2 py-1 border border-zinc-200">Adobe Photoshop</span>
             <span className="px-2 py-1 border border-zinc-200">Adobe Illustrator</span>
             <span className="px-2 py-1 border border-zinc-200">CorelDRAW</span>
-               <span className="px-2 py-1 border border-zinc-200">Inkscape</span>
+            <span className="px-2 py-1 border border-zinc-200">Inkscape</span>
             <span className="px-2 py-1 border border-zinc-200">Vectr</span>
             <span className="px-2 py-1 border border-zinc-200">Graphite</span>
             <span className="px-2 py-1 border border-zinc-200">Figma</span>
             <span className="px-2 py-1 border border-zinc-200">Canva</span>
-              <span className="px-2 py-1 border border-zinc-200">photomateMULTIv11</span>
+            <span className="px-2 py-1 border border-zinc-200">photomateMULTIv11</span>
             <span className="px-2 py-1 border border-zinc-200">Vector Magic</span>
             <span className="px-2 py-1 border border-zinc-200">Vectorgen</span>
-                        <span className="px-2 py-1 border border-zinc-200">Kttl</span>
+            <span className="px-2 py-1 border border-zinc-200">Kttl</span>
             <span className="px-2 py-1 border border-zinc-200">Freepik</span>
-                        <span className="px-2 py-1 border border-zinc-200">VectorStock</span>
+            <span className="px-2 py-1 border border-zinc-200">VectorStock</span>
+            <span className="px-2 py-1 border border-zinc-200">OpusClip</span>
+            <span className="px-2 py-1 border border-zinc-200">Envato</span>
+            <span className="px-2 py-1 border border-zinc-200">Pexels</span>
+            <span className="px-2 py-1 border border-zinc-200">ffmpeg</span>
+            <span className="px-2 py-1 border border-zinc-200">Unplash</span>
           </div>
         </div>
       </section>
