@@ -20,7 +20,7 @@ const Markup = () => (
           <div className="min-w-0">
             <div className="flex items-start justify-between gap-2 mb-1 sm:mb-2">
               <h1 className="text-[15px] sm:text-[17px] md:text-[23px] lg:text-[26px] font-bold leading-tight flex items-center gap-1 sm:gap-2 min-w-0"><span className="sm:hidden">Ken Agbayani</span><span className="hidden sm:inline">Agbayani, Kristian Ken Lucero</span>
-                <span className="relative inline-flex items-center justify-center w-[10px] h-[10px] sm:w-[14px] sm:h-[14px]" aria-label="Verified"><i className="fa-solid fa-certificate text-sky-500 text-[10px] sm:text-[14px]"></i><i className="fa-solid fa-check absolute text-white text-[5px] sm:text-[8px]"></i></span>
+                <span className="relative inline-flex items-center justify-center w-[10px] h-[10px] sm:w-[14px] sm:h-[14px]"><i className=" text-zinc-300 text-[10px] sm:text-[14px]"></i></span>
               </h1>
               <div className="switch shrink-0 z-10 hidden lg:block" aria-label="Toggle dark mode">
                 <input type="checkbox" id="themeToggle" aria-label="Toggle dark mode" />
@@ -354,25 +354,25 @@ const Markup = () => (
             </a>
           </div>
 
-          <div className="bg-zinc-100 p-1 mb-1.5 hover:bg-gray-200">
-            <b className="text-[12px] ml-1">Lecturer</b>
-            <p className="text-[12px] ml-1">Techtalk</p>
-          </div>
+          <a className="bg-zinc-100 p-1 mb-1.5 hover:bg-gray-200 block no-underline" href="https://drive.google.com/file/d/19ylee_VqpAYlSjudHhvKo9XWGEM7l5Ru/view?usp=drive_link" target="_blank" rel="noopener noreferrer">
+            <b className="text-[12px] ml-1">Certified Developer</b>
+            <p className="text-[12px] ml-1">AWS</p>
+          </a>
 
-          <div className="bg-zinc-100 p-1 mb-1.5 hover:bg-gray-200">
-            <b className="text-[12px] ml-1">CBT Web Design 1st Place</b>
-            <p className="text-[12px] ml-1">CBT Fest</p>
-          </div>
+          <a className="bg-zinc-100 p-1 mb-1.5 hover:bg-gray-200 block no-underline" href="https://www.facebook.com/photo.php?fbid=669636665811880&set=a.136747215767497&type=3" target="_blank" rel="noopener noreferrer">
+            <b className="text-[12px] ml-1">Web Design Champion</b>
+            <p className="text-[12px] ml-1">Cbt Fest</p>
+          </a>
 
-          <div className="bg-zinc-100 p-1 mb-1.5 hover:bg-gray-200">
-            <b className="text-[12px] ml-1">Legacy Responsive Web Design</b>
-            <p className="text-[12px] ml-1">FreeCodeCamp</p>
-          </div>
+          <a className="bg-zinc-100 p-1 mb-1.5 hover:bg-gray-200 block no-underline" href="https://drive.google.com/file/d/1botoWB7nQhxgGv7h4ae0npZDlDvlrZL4/view?usp=drive_link" target="_blank" rel="noopener noreferrer">
+            <b className="text-[12px] ml-1">Python Essentials 1</b>
+            <p className="text-[12px] ml-1">Cisco Networking Academy</p>
+          </a>
 
-          <div className="bg-zinc-100 p-1 mb-1.5 hover:bg-gray-200">
-            <b className="text-[12px] ml-1">CodeCred</b>
-            <p className="text-[12px] ml-1">HTML Fundamentals</p>
-          </div>
+          <a className="bg-zinc-100 p-1 mb-1.5 hover:bg-gray-200 block no-underline" href="https://www.hackerrank.com/certificates/69c17afd0c51" target="_blank" rel="noopener noreferrer">
+            <b className="text-[12px] ml-1">SQL Advanced</b>
+            <p className="text-[12px] ml-1">HackerRank</p>
+          </a>
         </article>
 
         <article className=" bg-white p-2 md:p-2.5 pb-3 page-divider-b main-page-divider-hover">
@@ -428,9 +428,7 @@ const Markup = () => (
           <a className="social-link contact-outline light-only-border-b text-[10px] inline-flex items-center w-full transition-all duration-300 ease-out 
             hover:-translate-y-0.5 border px-2 py-2.5 shadow-[0_0_0_0_rgba(113,113,122,0)] hover:border-transparent hover:shadow-[0_8px_14px_-10px_rgba(113,113,122,0.62)]" href="https://www.instagram.com/keanueu" target="_blank" rel="noopener noreferrer"><i
               className="fa-brands fa-instagram mr-1 text-[11px]"></i> Instagram</a>
-          <a className="social-link contact-outline light-only-border-b text-[10px] inline-flex items-center w-full transition-all duration-300 ease-out 
-            hover:-translate-y-0.5 border px-2 py-2.5 shadow-[0_0_0_0_rgba(113,113,122,0)] hover:border-transparent hover:shadow-[0_8px_14px_-10px_rgba(113,113,122,0.62)]" href="https://www.indeed.com/" target="_blank" rel="noopener noreferrer"><i
-              className="fa-solid fa-briefcase mr-1 text-[11px]"></i> Indeed</a>
+          
         </div>
         <div className="p-2.5 light-only-border-b">
           <h3 className="text-sm font-bold mb-1">Work With Me</h3>

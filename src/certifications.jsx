@@ -4,6 +4,12 @@ import { applyDocumentTheme } from './theme.js'
 
 const certifications = [
   {
+    title: 'Certified Developer',
+    source: 'AWS',
+    link: 'https://drive.google.com/file/d/19ylee_VqpAYlSjudHhvKo9XWGEM7l5Ru/view?usp=drive_link',
+  },
+
+  {
     title: 'Best in Org Shirt Design 2024',
     source: 'DOIT Organizational Shirt',
     link: 'https://www.facebook.com/ynotDOITnow/posts/we-are-thrilled-to-introduce-our-new-org-shirt-a-standout-design-chosen-as-the-w/622014330349147/',
