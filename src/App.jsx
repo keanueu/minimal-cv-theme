@@ -819,6 +819,69 @@ function App() {
       zoomOutBtn.addEventListener('click', onZoomOut)
     }
 
+    // Add pointer (pinch) and wheel zoom support on the resume PDF container
+    const pdfContainer = document.getElementById('pdfContainer')
+    const pdfCanvas = document.getElementById('pdfCanvas')
+    let pointers = new Map()
+    let pinchStartDistance = 0
+    let pinchStartScale = null
+
+    const getDistance = (a, b) => {
+      const dx = a.x - b.x
+      const dy = a.y - b.y
+      return Math.hypot(dx, dy)
+    }
+
+    const onPointerDown = (e) => {
+      if (!pdfContainer) return
+      try { pdfContainer.setPointerCapture?.(e.pointerId) } catch (err) {}
+      pointers.set(e.pointerId, { x: e.clientX, y: e.clientY })
+      if (pointers.size === 2) {
+        const pts = Array.from(pointers.values())
+        pinchStartDistance = getDistance(pts[0], pts[1])
+        pinchStartScale = currentScale
+      }
+    }
+
+    const onPointerMove = (e) => {
+      if (!pointers.has(e.pointerId)) return
+      pointers.set(e.pointerId, { x: e.clientX, y: e.clientY })
+      if (pointers.size === 2 && pinchStartDistance > 0 && pinchStartScale != null) {
+        const pts = Array.from(pointers.values())
+        const currentDistance = getDistance(pts[0], pts[1])
+        if (currentDistance <= 0) return
+        const scaleFactor = currentDistance / pinchStartDistance
+        const newScale = pinchStartScale * scaleFactor
+        updateZoom(newScale)
+      }
+    }
+
+    const onPointerUp = (e) => {
+      pointers.delete(e.pointerId)
+      pinchStartDistance = 0
+      pinchStartScale = null
+      try { pdfContainer.releasePointerCapture?.(e.pointerId) } catch (err) {}
+    }
+
+    const onWheel = (e) => {
+      // Use ctrl/meta + wheel for zoom on desktop to avoid overriding scroll
+      if (!pdfContainer) return
+      if (e.ctrlKey || e.metaKey) {
+        e.preventDefault()
+        const delta = -e.deltaY
+        const step = delta > 0 ? 0.03 : -0.03
+        updateZoom(currentScale + step)
+      }
+    }
+
+    if (pdfContainer) {
+      pdfContainer.addEventListener('pointerdown', onPointerDown)
+      pdfContainer.addEventListener('pointermove', onPointerMove)
+      pdfContainer.addEventListener('pointerup', onPointerUp)
+      pdfContainer.addEventListener('pointercancel', onPointerUp)
+      pdfContainer.addEventListener('wheel', onWheel, { passive: false })
+    }
+
     return () => {
       document.body.style.overflow = ''
       toggle?.removeEventListener('change', onThemeChange)
@@ -848,6 +911,13 @@ function App() {
         galleryNextBtn.removeEventListener('click', onGalleryNextClick)
       }
       window.removeEventListener('resize', onGalleryResize)
+      if (pdfContainer) {
+        pdfContainer.removeEventListener('pointerdown', onPointerDown)
+        pdfContainer.removeEventListener('pointermove', onPointerMove)
+        pdfContainer.removeEventListener('pointerup', onPointerUp)
+        pdfContainer.removeEventListener('pointercancel', onPointerUp)
+        pdfContainer.removeEventListener('wheel', onWheel)
+      }
       document.removeEventListener('keydown', onLightboxKeydown)
       galleryCleanup.forEach((fn) => fn())
       if (chatSend) {
