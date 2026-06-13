@@ -10,7 +10,7 @@ const Markup = () => (
             className="absolute inset-0 w-full h-full object-cover opacity-100 transition-opacity duration-200" src="newpfp.jpeg"
             alt="Profile light" />
           <img id="profileDark"
-            className="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-200" src="newpfp.jpeg"
+            className="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-200" src="newpfp2.jpeg"
             alt="Profile dark" />
           <img id="profileHover"
             className="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-200 pointer-events-none" src="lec.jpeg"
