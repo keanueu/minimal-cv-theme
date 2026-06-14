@@ -30,30 +30,24 @@ const Markup = () => (
             <p className="text-[10px] sm:text-sm md:text-[15px] mt-0 mb-1 sm:mb-2 whitespace-nowrap">
               <svg
                 className="mr-1 inline-block align-[-2px] w-3 h-3 sm:w-4 sm:h-4"
-                width="16"
-                height="16"
-                viewBox="0 0 24 24"
                 fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                aria-hidden="true"
-                focusable="false"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
               >
                 <path
-                  d="M12 21C15.5 17.4 19 14.1764 19 10.2C19 6.22355 15.866 3 12 3C8.13401 3 5 6.22355 5 10.2C5 14.1764 8.5 17.4 12 21Z"
-                  stroke="currentColor"
-                  strokeWidth="2"
                   strokeLinecap="round"
                   strokeLinejoin="round"
+                  strokeWidth="1.5"
+                  d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
                 />
                 <path
-                  d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z"
-                  stroke="currentColor"
-                  strokeWidth="2"
                   strokeLinecap="round"
                   strokeLinejoin="round"
+                  strokeWidth="1.5"
+                  d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
                 />
               </svg>
-              Pangasinan, Philippines
+              Metro Manila, Philippines
             </p>
 
 
@@ -75,8 +69,12 @@ const Markup = () => (
                 href="https://calendly.com/agbayanikristianken/30min"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hero-action-btn order-1 sm:order-1 h-[23px] sm:h-[34px] px-1 sm:px-3 border border-black bg-black text-white text-[6px] sm:text-[12px] font-normal inline-flex items-center justify-center sm:justify-start w-full sm:w-auto sm:shrink-0 gap-px sm:gap-px transition-all duration-300 ease-out hover:-translate-y-0.5"><i
-                  className="fa-regular fa-calendar"></i> Schedule a Call <i className="fa-solid fa-angle-right"></i></a>
+                className="hero-action-btn order-1 sm:order-1 h-[23px] sm:h-[34px] px-1 sm:px-3 border border-black bg-black text-white text-[6px] sm:text-[12px] font-normal inline-flex items-center justify-center sm:justify-start w-full sm:w-auto sm:shrink-0 gap-px sm:gap-px transition-all duration-300 ease-out hover:-translate-y-0.5">
+                <svg className="mr-1 w-3 h-3 sm:w-4 sm:h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                </svg> Schedule a Call <svg className="ml-1 inline w-3.5 h-3.5 sm:w-4 sm:h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M9 5l7 7-7 7"></path>
+                </svg></a>
               <a
 
 
@@ -87,21 +85,29 @@ const Markup = () => (
                 href="https://mail.google.com/mail/?view=cm&fs=1&to=agbayanikristianken@gmail.com&su=Get%20in%20touch"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hero-action-btn light-only-border-b hero-action-hover-bg order-2 sm:order-2 h-[23px] sm:h-[34px] px-1 sm:px-3 bg-white text-[6px] sm:text-[12px] inline-flex items-center justify-center sm:justify-start w-full sm:w-auto sm:shrink-0 gap-px sm:gap-px transition-all duration-300 ease-out hover:-translate-y-0.5 shadow-[0_0_0_0_rgba(113,113,122,0)] hover:border-transparent hover:shadow-[0_8px_14px_-10px_rgba(113,113,122,0.62)]"><i
-                  className="fa-regular fa-envelope"></i> Send Email</a>
+                className="hero-action-btn light-only-border-b hero-action-hover-bg order-2 sm:order-2 h-[23px] sm:h-[34px] px-1 sm:px-3 bg-white text-[6px] sm:text-[12px] inline-flex items-center justify-center sm:justify-start w-full sm:w-auto sm:shrink-0 gap-px sm:gap-px transition-all duration-300 ease-out hover:-translate-y-0.5 shadow-[0_0_0_0_rgba(113,113,122,0)] hover:border-transparent hover:shadow-[0_8px_14px_-10px_rgba(113,113,122,0.62)]">
+                <svg className="mr-1 w-3 h-3 sm:w-4 sm:h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                </svg> Send Email</a>
               <a
                 id="openResumeModalBtn"
                 href="/AgbayaniKristianKenLFinalCV.pdf"
                 data-resume-open
-                className="hero-action-btn light-only-border-b hero-action-hover-bg order-3 sm:order-3 h-[23px] sm:h-[34px] px-1 sm:px-3 bg-white text-[6px] sm:text-[12px] inline-flex items-center justify-center sm:justify-start w-full sm:w-auto sm:shrink-0 gap-px sm:gap-px transition-all duration-300 ease-out hover:-translate-y-0.5 shadow-[0_0_0_0_rgba(113,113,122,0)] hover:border-transparent hover:shadow-[0_8px_14px_-10px_rgba(113,113,122,0.62)]"><i
-                  className="fa-regular fa-file-lines"></i> View Resume</a>
+                className="hero-action-btn light-only-border-b hero-action-hover-bg order-3 sm:order-3 h-[23px] sm:h-[34px] px-1 sm:px-3 bg-white text-[6px] sm:text-[12px] inline-flex items-center justify-center sm:justify-start w-full sm:w-auto sm:shrink-0 gap-px sm:gap-px transition-all duration-300 ease-out hover:-translate-y-0.5 shadow-[0_0_0_0_rgba(113,113,122,0)] hover:border-transparent hover:shadow-[0_8px_14px_-10px_rgba(113,113,122,0.62)]">
+                <svg className="mr-1 w-3 h-3 sm:w-4 sm:h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                </svg> View Resume</a>
               <a
                 href="/blog-post" target='_blank'
                 className="hero-action-btn light-only-border-b hero-action-hover-bg order-4 sm:order-4 h-[23px] sm:h-[34px] px-1 sm:px-3 bg-white text-[6px] sm:text-[12px] inline-flex items-center justify-center sm:justify-between w-full sm:flex-1 sm:min-w-[240px] sm:ml-auto gap-px sm:gap-px transition-all duration-300 ease-out hover:-translate-y-0.5 shadow-[0_0_0_0_rgba(113,113,122,0)] hover:border-transparent hover:shadow-[0_8px_14px_-10px_rgba(113,113,122,0.62)]">
                 <span className="inline-flex items-center gap-0.5 sm:gap-2">
-                  <i className="fa-regular fa-pen-to-square"></i> Read my blog
+                  <svg className="inline w-3 h-3 sm:w-4 sm:h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9.5a2.5 2.5 0 00-2.5-2.5H14"></path>
+                  </svg> Read my blog
                 </span>
-                <i className="fa-solid fa-angle-right"></i>
+                <svg className="inline w-3.5 h-3.5 sm:w-4 sm:h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M9 5l7 7-7 7"></path>
+                </svg>
               </a>
             </div>
           </div>
@@ -114,16 +120,19 @@ const Markup = () => (
             <div>
               <h2 className="text-lg font-bold mb-2">About</h2>
               <p className="text-sm leading-6 mb-3">
-                I am an IT student at Pangasinan State University and Full Graphic Subli Artist with over two years of experience. My design background has sharpened my creativity, attention to detail, and visual problem-solving skills.
+                I am a graduating IT student at Pangasinan State University and a Graphic Artist with over two years of experience. My design background has strengthened creativity, attention to detail, and visual problem-solving skills.
               </p>
+
               <p className="text-sm leading-6 mb-3.5">
-                I am now specializing in web development, where I combine technical expertise with design thinking. I enjoy building clean, responsive, and high-performance websites that deliver a modern experience across all devices.
+                I am now focused on full-stack web and mobile development, building scalable applications across front-end and back-end systems. I enjoy creating clean, responsive, and high-performance solutions that deliver value across devices.
               </p>
+
               <p className="text-sm leading-6 mb-3.5">
-                My goal is to grow as a full-stack developer who builds products that solve real-world problems. I value clean structure and reliable performance, approaching every project with a focus on quality, maintainability, and continuous learning.
+                My goal is to grow as a full-stack developer who builds products that solve real-world problems. I value clean architecture and reliable performance, approaching every project with a focus on quality, maintainability, and continuous learning.
               </p>
+
               <p className="text-sm leading-6">
-                Lately, I have developed a deep fascination with Artificial Intelligence and its integration into modern applications. Beyond exploring generative AI, agentic systems, and AI-powered workflows, I have also begun attending and speaking on AI topics. These experiences continue to fuel my interest, as I see the transformative power of this technology firsthand.
+                Recently, I have developed a strong interest in Artificial Intelligence and its role in modern applications. Beyond exploring generative AI, agentic systems, and AI-powered workflows, I have also started attending AI-related events. These experiences continue to expand my perspective as I witness the transformative impact of this technology firsthand.
               </p>
             </div>
           </article>
@@ -185,7 +194,9 @@ const Markup = () => (
           <article className="bg-white p-3 pb-3 h-full min-h-[120px] md:min-h-0 page-divider-b main-page-divider-hover">
             <div className="flex items-center justify-between mb-2">
               <h2 className="text-lg font-bold">Graphic Designs</h2>
-              <a href="/graphic-design" className="text-xs">View All <i className="fa-solid fa-angle-right"></i></a>
+              <a href="/graphic-design" className="text-xs">View All <svg className="inline align-text-bottom w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M9 5l7 7-7 7"></path>
+              </svg></a>
             </div>
             <div className="relative space-y-2.5">
               <div className="relative">
@@ -241,8 +252,9 @@ const Markup = () => (
       <section className="fadeup-item fadeup-3 grid grid-cols-1 md:grid-cols-2 gap-2 mb-2">
         <article className="bg-white p-3 pb-3 page-divider-b main-page-divider-hover">
           <div className="flex items-center justify-between mb-2">
-            <h2 className="text-lg font-bold">Tech Stack</h2><a href="/techstack" className="text-xs">View All <i
-              className="fa-solid fa-angle-right"></i></a>
+            <h2 className="text-lg font-bold">Tech Stack</h2><a href="/techstack" className="text-xs">View All <svg className="inline align-text-bottom w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M9 5l7 7-7 7"></path>
+            </svg></a>
           </div>
           <div className="mb-3">
             <h3 className="text-[13px] font-semibold mb-1.5">Frontend</h3>
@@ -281,8 +293,9 @@ const Markup = () => (
 
         <article className="bg-white p-3 pb-3 page-divider-b main-page-divider-hover">
           <div className="flex items-center justify-between mb-2">
-            <h2 className="text-lg font-bold">Recent Projects</h2><a href="/recent-projects" className="text-xs">View All <i
-              className="fa-solid fa-angle-right"></i></a>
+            <h2 className="text-lg font-bold">Recent Projects</h2><a href="/recent-projects" className="text-xs">View All <svg className="inline align-text-bottom w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M9 5l7 7-7 7"></path>
+            </svg></a>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
             <div className="p-2.5 transition-all duration-300 ease-out 
@@ -350,7 +363,9 @@ const Markup = () => (
           <div className="flex items-center justify-between mb-2">
             <h2 className="text-lg font-bold">Certifications</h2>
             <a href="/certifications" className="text-xs">
-              View All <i className="fa-solid fa-angle-right"></i>
+              View All <svg className="inline align-text-bottom w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M9 5l7 7-7 7"></path>
+              </svg>
             </a>
           </div>
 
@@ -428,13 +443,15 @@ const Markup = () => (
           <a className="social-link contact-outline light-only-border-b text-[10px] inline-flex items-center w-full transition-all duration-300 ease-out 
             hover:-translate-y-0.5 border px-2 py-2.5 shadow-[0_0_0_0_rgba(113,113,122,0)] hover:border-transparent hover:shadow-[0_8px_14px_-10px_rgba(113,113,122,0.62)]" href="https://www.instagram.com/keanueu" target="_blank" rel="noopener noreferrer"><i
               className="fa-brands fa-instagram mr-1 text-[11px]"></i> Instagram</a>
-          
+
         </div>
         <div className="p-2.5 light-only-border-b">
           <h3 className="text-sm font-bold mb-1">Work With Me</h3>
           <div className="contact-outline light-only-border-b border px-1 py-1 w-full transition-all duration-300 ease-out hover:border-transparent">
             <p className="text-[10px] leading-5">Available for freelance web development, custom UI/UX design, and digital branding solutions.</p>
-            <a className="text-[10px] mt-2 hover:underline inline-flex items-center gap-1" href="https://mail.google.com/mail/?view=cm&fs=1&to=agbayanikristianken@gmail.com&su=Get%20in%20touch">Get in touch <i className="fa-solid fa-angle-right"></i></a>
+            <a className="text-[10px] mt-2 hover:underline inline-flex items-center gap-1" href="https://mail.google.com/mail/?view=cm&fs=1&to=agbayanikristianken@gmail.com&su=Get%20in%20touch">Get in touch <svg className="inline w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M9 5l7 7-7 7"></path>
+            </svg></a>
           </div>
 
         </div>
@@ -448,7 +465,9 @@ const Markup = () => (
               rel="noopener noreferrer"
             >
               <h3 className="text-[10px] font-bold mb-0.5 inline-flex items-center leading-tight">
-                <i className="fa-regular fa-envelope mr-1"></i> Email
+                <svg className="mr-1 w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                </svg> Email
               </h3>
               <span className="text-[10px] leading-tight">
                 agbayanikristianken@gmail.com
@@ -463,10 +482,14 @@ const Markup = () => (
               rel="noopener noreferrer"
             >
               <span className="text-[10px] mt-0.5 font-semibold inline-flex items-center leading-tight">
-                <i className="fa-regular fa-calendar mr-1"></i> Let's Talk
+                <svg className="mr-1 w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                </svg> Let's Talk
               </span>
               <span className="text-[10px] leading-tight">
-                Schedule a Call <i className="fa-solid fa-angle-right"></i>
+                Schedule a Call <svg className="inline w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M9 5l7 7-7 7"></path>
+                </svg>
               </span>
             </a>
           </div>
@@ -478,10 +501,14 @@ const Markup = () => (
               rel="noopener noreferrer"
             >
               <span className="text-[10px] mt-0.5 font-semibold inline-flex items-center leading-tight">
-                <i className="fa-regular fa-pen-to-square mr-1"></i> Blog
+                <svg className="mr-1 w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9.5a2.5 2.5 0 00-2.5-2.5H14"></path>
+                </svg> Blog
               </span>
               <span className="text-[10px] leading-tight">
-                Read my blog <i className="fa-solid fa-angle-right"></i>
+                Read my blog <svg className="inline w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M9 5l7 7-7 7"></path>
+                </svg>
               </span>
             </a>
           </div>
@@ -492,8 +519,11 @@ const Markup = () => (
         <h2 className="text-lg font-bold mb-2">Gallery</h2>
         <div className="relative z-[40]">
           <button id="galleryPrevBtn" type="button"
-            className="grid absolute left-0 top-1/2 -translate-y-1/2 -translate-x-1/2 w-8 h-9 sm:w-9 sm:h-10 border border-zinc-200 bg-zinc-50 place-items-center text-sm text-zinc-500 z-[50] pointer-events-auto cursor-pointer"><i
-              className="fa-solid fa-angle-left"></i></button>
+            className="grid absolute left-0 top-1/2 -translate-y-1/2 -translate-x-1/2 w-8 h-9 sm:w-9 sm:h-10 border border-zinc-200 bg-zinc-50 place-items-center text-sm text-zinc-500 z-[50] pointer-events-auto cursor-pointer">
+            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M15 19l-7-7 7-7"></path>
+            </svg>
+          </button>
           <div id="galleryViewport" className="overflow-hidden relative z-[1]">
             <div id="galleryTrack" className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-1">
               <div className="js-gallery-frame overflow-hidden bg-zinc-50 relative group">
@@ -539,8 +569,11 @@ const Markup = () => (
             </div>
           </div>
           <button id="galleryNextBtn" type="button"
-            className="grid absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/2 w-8 h-9 sm:w-9 sm:h-10 border border-zinc-200 bg-zinc-50 place-items-center text-sm text-zinc-500 z-[50] pointer-events-auto cursor-pointer"><i
-              className="fa-solid fa-angle-right"></i></button>
+            className="grid absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/2 w-8 h-9 sm:w-9 sm:h-10 border border-zinc-200 bg-zinc-50 place-items-center text-sm text-zinc-500 z-[50] pointer-events-auto cursor-pointer">
+            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M9 5l7 7-7 7"></path>
+            </svg>
+          </button>
         </div>
       </section>
 
@@ -552,12 +585,16 @@ const Markup = () => (
         </button>
         <button id="lightboxPrev" className="absolute left-4 top-1/2 -translate-y-1/2 w-[45px] h-[42px] bg-[rgba(72,72,80,0.78)] text-white grid place-items-center transition-colors duration-200 hover:bg-[rgba(96,96,106,0.9)] text-lg" type="button"
           aria-label="Previous image">
-          <i className="fa-solid fa-angle-left text-white opacity-100"></i>
+          <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M15 19l-7-7 7-7"></path>
+          </svg>
         </button>
         <button id="lightboxNext" className="absolute right-4 top-1/2 -translate-y-1/2 w-[45px] h-[42px] bg-[rgba(72,72,80,0.78)] text-white grid place-items-center transition-colors duration-200 hover:bg-[rgba(96,96,106,0.9)] text-lg
       " type="button"
           aria-label="Next image">
-          <i className="fa-solid fa-angle-right text-white opacity-100"></i>
+          <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M9 5l7 7-7 7"></path>
+          </svg>
         </button>
         <div className="relative max-w-[92vw] max-h-[88vh] w-full flex items-center justify-center">
           <img id="lightboxImage" className="max-h-[82vh] w-auto max-w-full object-contain" src="" alt="Gallery preview" />
