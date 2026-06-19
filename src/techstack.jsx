@@ -91,8 +91,9 @@ const TechStack = () => {
         <div className="stagger-item mb-4" style={{ '--stagger-delay': '100ms' }}>
           <h2 className="text-[14px] font-medium mb-2">Backend</h2>
           <div className="flex flex-wrap gap-3 text-sm">
-            <span className="px-2 py-1 border border-zinc-200">Node.js</span>
+            <span className="px-2 py-1 border border-zinc-200">MariaDB</span>
             <span className="px-2 py-1 border border-zinc-200">PHP</span>
+            <span className="px-2 py-1 border border-zinc-200">Node.js</span>
             <span className="px-2 py-1 border border-zinc-200">Laravel</span>
             <span className="px-2 py-1 border border-zinc-200">MySQL</span>
             <span className="px-2 py-1 border border-zinc-200">PostgreSQL</span>
