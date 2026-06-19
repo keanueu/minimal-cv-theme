@@ -265,16 +265,19 @@ const Markup = () => (
                 className="px-2 py-0.5">Bootstrap</span><span
                   className="px-2 py-0.5">Tailwind CSS</span><span
                     className="px-2 py-0.5">Next.js</span><span
-                      className="px-2 py-0.5">React.js</span>
+                      className="px-2 py-0.5">React.js</span><span
+                      className="px-2 py-0.5">Astro</span>
             </div>
           </div>
           <div className="mb-3">
             <h3 className="text-[13px] font-semibold mb-1.5">Backend</h3>
             <div className="flex flex-wrap gap-1.5 text-xs"><span
+              className="px-2 py-0.5">MariaDB</span><span
               className="px-2 py-0.5">Node.js</span><span
                 className="px-2 py-0.5">PHP</span><span
                   className="px-2 py-0.5">Laravel</span><span
-                    className="px-2 py-0.5">MySQL</span></div>
+                    className="px-2 py-0.5">MySQL</span><span
+                    className="px-2 py-0.5">PostgreSQL</span></div>
           </div>
           <div>
             <h3 className="text-[13px] font-semibold mb-1.5">Object-Oriented Programming</h3>
