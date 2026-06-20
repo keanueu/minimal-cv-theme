@@ -86,6 +86,12 @@ function App() {
         name: 'Al Fadhl Q. Shuaib',
         role: 'System Auditor at Vertex Technology Corp',
       },
+       {
+        quote:
+          "An exceptionally consistent and professional developer. They have a remarkable eye for detail, consistently producing clean, well-structured code and highly intuitive, proper layouts. Any team would be lucky to have their technical discipline.",
+        name: 'Al Fadhl Q. Shuaib',
+        role: 'System Auditor at Vertex Technology Corp',
+      },
     ]
 
     let recommendationsIntervalId
